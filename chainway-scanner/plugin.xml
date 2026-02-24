@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.chainwayscanner" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>CordovaPluginChainway</name>
+    <js-module name="cordovaPluginChainway" src="www/CordovaPluginChainway.js">
+        <clobbers target="cordova.plugins.CordovaPluginChainway" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="CordovaPluginChainway">
+                <param name="android-package" value="com.chainwayscanner.CordovaPluginChainway" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/CordovaPluginChainway.java"
+            target-dir="src/com/chainwayscanner/CordovaPluginChainway" />
+        <lib-file src="src/android/libs/DeviceAPI_ver20231208_release.aar" />
+        <framework src="plugin-settings.gradle" custom="true" type="gradleReference" />
+    </platform>
+</plugin>

@@ -1,0 +1,9 @@
+repositories{    
+  flatDir {
+      dirs 'src/main/libs'
+   }
+}
+
+dependencies {
+   compile(name:'DeviceAPI_ver20231208_release', ext:'aar')
+}
