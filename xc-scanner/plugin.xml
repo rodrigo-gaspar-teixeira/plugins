@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.xcscanner" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>CordovaPluginXcScanner</name>
+    <js-module name="CordovaPluginXcScanner" src="www/CordovaPluginXcScanner.js">
+        <clobbers target="cordova.plugins.CordovaPluginXcScanner" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="CordovaPluginXcScanner">
+                <param name="android-package" value="com.xcscanner.CordovaPluginXcScanner" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/CordovaPluginXcScanner.java"
+            target-dir="src/com/xcscanner" />
+        <source-file src="src/android/libs/xcscanner_v1.1.10-release.jar" target-dir="libs" />
+    </platform>
+</plugin>

@@ -1,0 +1,17 @@
+{
+  "name": "com.tectoyscanner",
+  "version": "1.2.0",
+  "description": "",
+  "cordova": {
+    "id": "com.tectoyscanner",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Rodrigo Teixeira",
+  "license": "ISC"
+}
