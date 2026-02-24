@@ -1,0 +1,17 @@
+{
+  "name": "com.cpxscanner",
+  "version": "1.0.2",
+  "description": "Plugin to allow scanner from device cpx to work on added app",
+  "cordova": {
+    "id": "com.cpxscanner",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Rodrigo Teixeira",
+  "license": "ISC"
+}

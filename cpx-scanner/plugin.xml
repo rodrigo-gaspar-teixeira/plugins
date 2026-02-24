@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.cpxscanner" version="1.0.2" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>CordovaPluginCpxScanner</name>
+    <js-module name="CordovaPluginCpxScanner" src="www/CordovaPluginCpxScanner.js">
+        <clobbers target="cordova.plugins.CordovaPluginCpxScanner" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="CordovaPluginCpxScanner">
+                <param name="android-package" value="com.cpxscanner.CordovaPluginCpxScanner" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/CordovaPluginCpxScanner.java" target-dir="src/com/cpxscanner" />
+        <source-file src="src/android/libs/e3scan.jar" target-dir="libs" />
+    </platform>
+</plugin>
